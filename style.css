@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@200&display=swap');
+
+
+body,html {
+    background-color:rgb(222, 222, 230);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.slider-image {
+
+    height: 550px;
+}
+@media screen and (max-width: 320px) {
+    .slider-image{
+        height: 200px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width:480px){
+    .slider-image{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:720px) {
+    .slider-image{
+        height: 300px;
+    }
+}
+
+@media screen and(min-width: 721px) and (max-width:1080px) {
+    .slider-image{
+        height: 290px;
+    }
+}
+
+@media screen and(min-width: 1080px) and (max-width: 1280px){
+    .slider-image{
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px){
+    .slider-image{
+        height: 650px;
+    }
+}
+
+.service_icon {
+    font-size: 70px;
+    color: darkblue;
+}
+
+.icon {
+    margin: 2px;
+    padding: 2px;
+    font-size: 18px;
+}
+
+/* index.ejs */
+.sections {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 18px;
+
+}
+
+
+.left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(50%);
+    margin: 4px;
+    font-size: 25px;
+    width: 40%;
+}
+.left div{
+    color: rgb(239, 77, 17);
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(12, 12, 117);
+    font-weight: bolder;
+}
+
+.typewrite {
+    position: relative;
+    color: rgb(12, 12, 117);
+   font-weight: bolder;
+}
+
+
+div .typewrite::before {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    height: 30px;
+    width: 2px;
+    font-weight: 500;
+    background:rgb(12, 12, 117);
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+div .typewrite.stop-blinking::before {
+    animation: none;
+}
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+
+}
+
+.right {
+    width: 40%;
+
+}
+
+.dev {
+    color: rgb(9, 161, 9);
+    margin-left: 70px 4px;
+}
+
+.right img {
+    width: 80%;
+    height: 90%;
+    border-radius: 50%;
+
+}
+.quotes{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 80%;
+    margin: 10px;
+    text-align: center;
+    padding: 4px;
+    color:  rgb(12, 12, 117);
+    font-size: 1.2em;
+    font-weight:bold;
+}
+
+
+
+
+
+

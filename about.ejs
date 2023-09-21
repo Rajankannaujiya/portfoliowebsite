@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>About</title>
+</head>
+
+<body>
+  <% data=details %>
+    <%- include ("../views/partials/navbar.ejs"), data %>
+
+      <div class="containermain">
+
+        <% slides=slider %>
+          <%- include("../views/partials/slider.ejs"), slides %>
+
+
+
+            <section id="about_section" class="py-4">
+              <div class="container">
+                <h1 class="text-center text-success">Welcome to my Portfolio</h1>
+                <div class="row mt-4">
+
+                  <!-- first service column -->
+                  <div class="col-md-6">
+                    <div class="card m-8">
+                      <div class="card-body">
+                        <div class="container text-center service_icon py-2"> <i class="fas fa-school"></i>
+                        </div>
+                        <div>
+                          <h4 class="card-title text-primary">10th Grade</h4>
+                          <p class="text-success" style="font-weight: bold;">St. Thomas English School Jharsuguda,
+                          Odisha
+                          </p>
+                          
+                          <h5 class="card-title text-primary">12th Grade</h5>
+                          <p class="text-success" style="font-weight: bold;">Kendriya Vidyalaya Jharsuguda,Odisa</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- second service column -->
+                  <div class="col-md-6">
+                    <div class="card m-8">
+                      <div class="card-body">
+                        <div class="container text-center service_icon py-2"> <i class="fas fa-laptop"></i>
+                        </div>
+
+                        <h2 class="card-title text-primary">College</h2>
+                        <p class="text-success" style="font-weight: bold;">Hemwati Nandan Bahuguna Garhwal University Srinagar Uttarakhand</p>
+                        <p>
+                        <h4 class="text-primary">Bachelor of Technology:</h4>
+                        <p class="text-success" style="font-weight: bold;">Computer Science and Engineering</p>
+                        </p>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col-md-6">
+                      <div class="card m-8">
+                        <div class="card-body">
+                          <div class="container text-center service_icon py-2"> <i class="fas fa-code"></i>
+                          </div>
+
+                          <h2 class="card-title text-success">Full Stack Developer</h2>
+                          <p></p>
+                          <p>
+                          <h4 class="text-primary">Skills:</h4>
+                          <p class="text-success" style="font-weight: bold;">HTML , CSS, BOOTSTRAP, JAVASCRIPT, REACT, NODE JS, EXPRESS JS,
+                            MONGODB,
+                            MySQL,API </p>
+                          </p>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="card">
+                        <div class="card-body text-wrap">
+                          <div class="container text-center service_icon py-2"><i class="fas fa-link"></i>
+                          </div>
+
+                          <h2 class="card-title text-success">Usefull links</h2>
+                          <div class="d-flex flex-column  justify-content-center align-items-center">
+                            <p class="icon">Instagram: <a href="https://instagram.com/_rajan_.108">clickhere <i
+                                  class="	fab fa-instagram"></i></a></p>
+                            <p class="icon">Github: <a href="https://github.com/Rajankannaujiya">clickhere <i
+                                  class="fab fa-github"></i></a></p>
+                            <p class="icon">Telegram: <a href="https://t.me/Rajan_203">clickhere <i
+                                  class="fab fa-telegram"></i></a></p>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- </div> -->
+            </section>
+
+      </div>
+
+      <%- include("../views/partials/footer.ejs") %>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
